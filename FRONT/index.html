@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Caribbean Paradise</title>
+    <link rel="icon" href="Multimedia/Icono.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <!-- --------------------------------INICIO------------------------------------>
+    <section id="inicio">
+
+        <div class="contenido">
+            <header>
+                <nav>
+                    <input type="checkbox" id="Check">
+                    <label for="Check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <a href="#" class="enlace1">
+                        <img src="Multimedia/Icono.png" alt="Logo del Hotel Carribean Paradise" class="logo">
+                    </a>
+                    <ul>
+                        <li><a  class="active" href="#inicio">Inicio</a></li>
+                        <li><a href="#quienes">¿Quiénes Somos?</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contáctanos</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="div_presentacion">
+                <p class="titulo">Bienvenido</p>
+                <h2>Somos <span>HOTEL CARIBBEAN PARADISE</span>, gracias por preferirnos.</h2>
+                <p class="descripcion">
+                    Te invitamos a disfrutar de una estancia inolvidable. Con una ubicación privilegiada frente al mar Caribe, te ofrecemos la combinación perfecta de comodidad, atención y vistas impresionantes. Disfruta de nuestra deliciosa cocina local y relájate en nuestras confortables instalaciones. ¡Gracias por elegirnos para tu escapada junto al mar en Cartagena!
+                </p>
+                <a href="#servicios">Servicios</a>
+                <div class="redes">
+                    <a href="https://www.facebook.com/juanesteban.vargas.1232/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/channel/UC60cbQno5chLzVxvN6zAQTA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/juanes_vp8/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="div_check">
+                <form action="/api/consultaDisponibilidad" id="consultaForm" class="form_check">
+
+                    <div class="titulo">
+                        <p>Consulta nuestra disponibilidad</p>
+                    </div>
+
+                    <div class="div_in">
+                        <span><i class="fa-regular fa-calendar-days"></i></span>
+                        <label for="Check-in">CHECK IN</label>
+                        <input type="date" id="Check-in" placeholder="Check In">
+                    </div>
+
+                    <div class="div_in">
+                        <span><i class="fa-regular fa-calendar-days"></i></span>
+                        <label for="Check-out">CHECK OUT</label>
+                        <input type="date"  id="Check-out" placeholder="Check Out">
+                    </div>
+
+                    <div class="div_in">
+                        <span><i class="fa-solid fa-user"></i></span>
+                        <label for="Check-in">Numero de Personas</label>
+                        <input type="number"  id="numeroPersonas" placeholder="Numero de Personas">
+                    </div>
+
+                    <div class="div_btn">
+                        <button type="button" id="consultarBtn" class="btn">Consultar</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!------------------CONSULTAR ------------------->
+    <section id="consulta">
+        <div class="panel">
+        <h1 class="titulo">Disponibilidad</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea doloremque earum repudiandae quidem vero dolorem nam pariatur voluptates corrupti labore, sit distinctio nemo atque! Adipisci optio laudantium modi doloremque enim.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus cupiditate incidunt laudantium tenetur aliquam nesciunt temporibus quo laborum fugit aperiam est iste vero, voluptatum fugiat eum sit eius nisi esse?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat repudiandae autem impedit veniam voluptatibus alias nostrum praesentium cupiditate harum repellat rerum, amet maiores inventore repellendus placeat. Aliquid, reiciendis inventore.</p>
+    </div>
+    </section>
+
+    <!------------------SECCION QUINES SOMOS ------------------->
+    <section id="quienes">
+        <div class="div_foto">
+            <img src="/MULTIMEDIA/quienessomos.jpg" alt="">
+        </div>
+
+        <div class="div_quienes">
+            <p class="titulo"> ¿Quiénes somos? </p>
+            <h2>Somos <span>HOTEL CARIBBEAN PARADISE</span></h2>
+            <p class="p_descripcion">
+                Somos un equipo apasionado dedicado a ofrecerte experiencias memorables en la hermosa ciudad de Cartagena, Colombia. Nuestro compromiso es brindarte hospitalidad auténtica y servicios de alta calidad para que cada momento de tu estadía sea inolvidable. Desde nuestras cómodas instalaciones hasta nuestro atento equipo, estamos aquí para hacer que tu visita sea excepcional. ¡Bienvenido a nuestro mundo de hospitalidad junto al mar Caribe!
+            </p>
+
+        </div>
+
+    </section>
+
+    <!------------------SECCION SERVICIOS------------------->
+
+    <section id="servicios">
+        <h3>Nuestras habitaciones</h3>
+        <h2>Tus vacaciones en las mejores manos</h2>
+
+        <div class="div_contenido">
+
+            <div class="div_habitaciones">
+                <h3 class="titulo">Habitación Jacuzzi</h3>
+                <img src="/MULTIMEDIA/jacuzzi.jpg" alt="">
+                <div class="div_iconos">
+                 <span>Incluye <i class="fa-solid fa-bowl-food"></i></span>
+                 <span><i class="fa-solid fa-bowling-ball"></i></span>
+                 <span><i class="fa-solid fa-bath"></i></span>
+    
+                </div>
+                <p class="descripcion">
+                    Disfruta de una experiencia de lujo en nuestra habitación con jacuzzi. Sumérgete en las burbujas mientras contemplas las vistas al mar Caribe. Además, tendrás acceso al buffet libre donde podrás degustar deliciosos platos, y podrás divertirte en nuestra sala de juegos con entretenimiento para todas las edades.
+                </p>
+    
+                <h5 class="precio">$150.000 </h5>
+                <a href="https://wa.me/573152792450?Hi%20Juan,%20I%20saw%20your%20page%20=)..." target="_blank" class="btn_reservar">Reservar</a>           
+            </div>
+    
+            <div class="div_habitaciones">
+                <h3 class="titulo">Habitación Doble </h3>
+                <img src="/MULTIMEDIA/media.jpg" alt="">
+                <div class="div_iconos">
+                 <span>Incluye <i class="fa-solid fa-bowl-food"></i></span>
+                 <span><i class="fa-solid fa-bowling-ball"></i></span>
+    
+                </div>
+                <p class="descripcion">
+                    Ideal para parejas o amigos, nuestra habitación doble ofrece comodidades excepcionales y una atmósfera acogedora. Disfruta del buffet libre con una variedad de opciones culinarias para satisfacer todos los gustos. Además, podrás disfrutar de momentos de diversión en nuestra sala de juegos.
+                </p>
+    
+                <h5 class="precio">$125.000 </h5>
+                <a href="https://wa.me/573152792450?Hi%20Juan,%20I%20saw%20your%20page%20=)..." target="_blank" class="btn_reservar">Reservar</a>          
+            </div>
+    
+            <div class="div_habitaciones">
+                <h3 class="titulo">Habitación Sencilla</h3>
+                <img src="/MULTIMEDIA/sencilla.webp" alt="">
+                <div class="div_iconos">
+                <span>Incluye <i class="fa-solid fa-bowl-food"></i></span>
+                </div>
+                <p class="descripcion"> 
+                    Nuestra habitación sencilla es perfecta para quienes buscan comodidad y conveniencia durante su estancia. Con acceso al buffet libre, podrás disfrutar de una amplia selección de platos y experimenta la hospitalidad de nuestro hotel mientras te relajas y disfrutas de tu estancia en Cartagena.
+                </p>
+    
+                <h5 class="precio">$100.000 </h5>
+                <a href="https://wa.me/573152792450?Hi%20Juan,%20I%20saw%20your%20page%20=)..." target="_blank" class="btn_reservar">Reservar</a>          
+            </div>
+
+        </div>
+
+
+
+        <div class="div_servicios">
+            <section class="div_imagenes">
+                <img src="/MULTIMEDIA/seguridad.webp" alt="">
+                <img src="/MULTIMEDIA/GuiaTuristico.webp" alt="">
+                <img src="/MULTIMEDIA/buffet.jpeg" alt="">
+                <img src="/MULTIMEDIA/juegos.jpg" alt="">
+            </section>
+
+            <div class="div_informacion">
+
+             <p>Servicios</p>
+             <h2>Los mejores servicios para tus vacaciones</h2>
+             <div class="iconos">
+             <span><i class="fa-solid fa-shield-halved"></i> Seguridad privada </span>
+             <span><i class="fa-solid fa-book"></i> Guia turistico </span>
+             <span><i class="fa-solid fa-bowl-food"></i> Buffet libre </span>
+             <span><i class="fa-solid fa-bowling-ball"></i> Sala de juegos </span>
+
+             </div>
+             
+
+            </div>
+            
+
+        </div>
+
+
+
+    </section>
+
+        <!------------------SECCION Contacto------------------->
+
+        <section id="contacto">
+            <h3 class="titulo">Contactanos</h3>
+            <h3 class="titulo">Con gusto te atenderemos</h3>
+    
+            <div class="contactos">
+                
+                
+                <div class="div_contacto">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>Telefono</h3>
+                    <p >Llamanos :)</p>
+                    <p> Colombia: (123) 456-7890</p>
+                </div>
+    
+                <div class="div_contacto">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p>Envianos un mensaje </p>
+                    <p>Con gusto te atenderemos :)</p>
+                    <a href="https://wa.me/573152792450?Hi%20Juan,%20I%20saw%20your%20page%20=)..." target="_blank" class="btn_enviar">Enviar</a>
+                </div>
+
+    
+            </div>
+    
+        </section>
+
+        <!------------------SECCION FOOTER------------------->
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+            
+                <div class="footer-content">
+                    <h3>Contacto</h3>
+                    <p>Calle del Mar #123: Cartagena, Bolívar, Colombia</p>
+                    <p>Teléfono: (123) 456-7890</p>
+                    <div class="redes">
+                        <a href="https://www.facebook.com/juanesteban.vargas.1232/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/channel/UC60cbQno5chLzVxvN6zAQTA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/juanes_vp8/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024, HOTEL CARIBBEAN PARADISE.</p>
+            </div>
+        </footer>
+</body>
+</html>
