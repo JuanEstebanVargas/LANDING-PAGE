@@ -9,7 +9,7 @@ const consultarDisponibilidad = async (fechaInicio, fechaSalida, cantPersonas) =
         console.log('cant P1:', cantPersonas);
         
         const query = `
-        SELECT h."ID", h."TIPO", h."PRECIO", h."CAPACIDAD"
+        SELECT DISTINCT h."ID", h."TIPO", h."PRECIO", h."CAPACIDAD"
         FROM public."HABITACION" h
         LEFT JOIN public."RESERVA" r ON h."ID" = r."ID_HABITACION" AND r."HABILITADO" = true 
         WHERE h."HABILITADO" = true

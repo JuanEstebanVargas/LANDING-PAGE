@@ -452,7 +452,7 @@ li a.active, li a:hover{
     padding: 20px; /* Espaciado interno */
     margin-bottom: 20px; /* Espacio inferior entre habitaciones */
     background-color: #ecf0f1; /* Color de fondo */
-    transition: transform 0.3s ease; /* Transición al pasar el ratón */
+    transition: transform 0.6s ease; /* Transición al pasar el ratón */
 }
 
 .habitacion:hover {
@@ -469,6 +469,29 @@ li a.active, li a:hover{
     font-weight: bold; /* Texto en negrita para el primer párrafo (ID, Tipo, Precio, Capacidad) */
 }
 
+
+.reservar-btn {
+    display: none;
+    background-color: #3498db; /* Blue */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em; /* Tamaño de letra igual al del texto en .habitacion */
+    width: 50%; /* El botón ocupa el 50% del ancho del div */
+    margin: 4px auto; /* Centra el botón */
+    cursor: pointer;
+    transition: background-color 0.4s ease, opacity 0.4s ease; /* Añade transición suave al color de fondo y a la opacidad */
+    opacity: 0.6; /* Opacidad inicial del botón */
+    border-radius: 10px;
+}
+
+.reservar-btn:hover {
+    background-color: #3498db; /* Darker blue */
+    opacity: 1; /* Opacidad completa al pasar el mouse sobre el botón */
+}
 
 /*----------------------SECCION QUIENES SOMOS---------------------------------*/
 
